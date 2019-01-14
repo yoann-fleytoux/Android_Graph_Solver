@@ -1,0 +1,81 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:ignore="RtlHardcoded,UselessLeaf" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_from_vertex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="get_associated_destination"
+            android:text="@string/string_vers_la_destination" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_wich_vertex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show_list_after_create_edge"
+        android:text="@string/string_wich_vertex" />
+
+    <EditText
+        android:id="@+id/Edit_edge_lenght"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/string_edge_lenght"
+        android:inputType="numberSigned"
+        android:lines="2" />
+
+    <EditText
+        android:id="@+id/EditText_vertex_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/string_enter_edge_description"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+		
+    <Button
+        android:id="@+id/button_record_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="record_audio"
+        android:text="@string/string_record_audio" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="end_creation_edge"
+        android:text="@string/string_next" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancel"
+        android:text="@string/string_cancel" />
+
+    <Button
+        android:id="@+id/button_accueil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show_acceuil"
+        android:text="@string/string_accueil" />
+
+</TableLayout>

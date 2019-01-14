@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.my_test.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+        android:name="com.example.my_test.Activity_create_map"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+    
+    <activity
+        android:name="com.example.my_test.Activity_hm_veretx"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.Activity_create_map" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+    <activity
+        android:name="com.example.my_test.Activity_create_vertex"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.Activity_hm_veretx" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+    <activity
+        android:name="com.example.my_test.Activity_end_creation"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.Activity_create_vertex" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+    <activity
+        android:name="com.example.my_test.Activity_create_edge"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.Activity_end_creation" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+    <activity
+        android:name="com.example.my_test.Activity_load_map"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.my_test.MainActivityy" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.my_test.MainActivityy" />
+    </activity>
+    
+</application>
+
+</manifest>

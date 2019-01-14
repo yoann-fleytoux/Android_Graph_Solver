@@ -1,0 +1,38 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:ignore="RtlHardcoded,UselessLeaf" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_from_vertex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/String_list_vertex" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/Table_Layout_load_map"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_accueil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show_accueil"
+        android:text="@string/string_accueil" />
+
+</TableLayout>
